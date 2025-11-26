@@ -1,4 +1,4 @@
-📝 TaskFlow API — Gerenciamento de Tarefas
+📝 **TaskFlow API — Gerenciamento de Tarefas**
 
 API REST desenvolvida com Node.js + TypeScript, documentada com Swagger, testada com Thunder Client e preparada para uso com Docker + PostgreSQL.
 
@@ -12,14 +12,14 @@ Estrutura limpa, separada em módulos
 
 Código escalável e fácil de manter
 
-🧠 Tecnologias Utilizadas
+🧠 **Tecnologias Utilizadas**
 Tecnologia	Função
 Node.js + Express	Servidor HTTP da API
 TypeScript	Tipagem estática e segurança
 Swagger UI + JSDoc	Documentação automática
 Docker + Postgres (futuro)	Banco persistente
 Thunder Client	Testes da API
-📁 Estrutura do Projeto
+📁 **Estrutura do Projeto**
 
 taskflow-api/
 ├─ src/
@@ -30,27 +30,27 @@ taskflow-api/
 ├─ tsconfig.json
 └─ package.json
 
-🔥 Como Executar
+🔥 **Como Executar**
 
 Clonar o repositório
 git clone https://github.com/oTalDoWaaase/taskflow-api.git
 
 cd taskflow-api
 
-Instalar dependências
+**Instalar dependências**
 npm install
 
-Rodar servidor
+**Rodar servidor**
 npm run dev
 
-🌐 Endpoints Disponíveis
+🌐 **Endpoints Disponíveis**
 
 GET /tasks → Lista tarefas
 POST /tasks → Cria nova tarefa
 PUT /tasks/{id} → Atualiza uma tarefa
 DELETE /tasks/{id} → Remove tarefa
 
-📘 Documentação Swagger
+📘 **Documentação Swagger**
 
 Abrir no navegador:
 
@@ -66,14 +66,6 @@ port: 5432
 user: taskflow
 password: taskflow
 database: taskflow
-
-📸 Comprovação com Prints
-
-✔ Rotas funcionando
-✔ Swagger exibindo documentação
-✔ CRUD completo testado
-
-(Aqui você insere as prints igual combinamos)
 
 📌 Conclusão
 
