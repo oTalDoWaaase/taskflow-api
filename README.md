@@ -2,7 +2,7 @@
 
 API REST desenvolvida com Node.js + TypeScript, documentada com Swagger, testada com Thunder Client e preparada para uso com Docker + PostgreSQL.
 
-🚀 Objetivos do Projeto
+ Objetivos do Projeto
 
 Gerenciar tarefas com CRUD completo
 
