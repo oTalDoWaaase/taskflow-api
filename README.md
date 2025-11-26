@@ -48,10 +48,14 @@ Copiar código
 ```bash
 git clone https://github.com/oTalDoWaaase/taskflow-api.git
 cd taskflow-api
+
+
 2. Instalar dependências
 bash
 Copiar código
 npm install
+
+
 3. Rodar servidor em dev
 bash
 Copiar código
