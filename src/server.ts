@@ -1,27 +1,20 @@
-import express from 'express';
-import cors from 'cors';
-import routes from './routes';
-import { setupSwagger } from './swagger';
+import express from "express";
+import cors from "cors";              // 👈 novo import
+import { setupSwagger } from "./swagger";
+import routes from "./routes";
 
 const app = express();
 
-app.use(cors());
+app.use(cors());                     // 👈 habilita o CORS
 app.use(express.json());
 
-// rotas principais
+// rotas da API
 app.use(routes);
 
-// documentação Swagger
+// swagger
 setupSwagger(app);
 
-// rota pra teste de vida
-app.get('/health', (req, res) => {
-  res.json({ status: 'ok', message: 'TaskFlow API online 😎' });
-});
-
-const PORT = process.env.PORT || 3000;
-
+const PORT = 3000;
 app.listen(PORT, () => {
-  console.log(`🚀 TaskFlow API rodando na porta ${PORT}`);
-  console.log(`📘 Documentação: http://localhost:${PORT}/docs`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });

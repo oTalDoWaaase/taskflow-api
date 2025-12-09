@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>TaskFlow — Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>TaskFlow</h1>
+      <p>Gerenciador de tarefas da sua API em Node + TS</p>
+    </header>
+
+    <main>
+      <section class="card form-card">
+        <h2 id="form-title">Nova tarefa</h2>
+        <form id="task-form">
+          <input type="hidden" id="task-id" />
+
+          <div class="field">
+            <label for="title">Título</label>
+            <input id="title" type="text" placeholder="Ex: Estudar Node.js" required />
+          </div>
+
+          <div class="field">
+            <label for="description">Descrição</label>
+            <textarea id="description" rows="3" placeholder="Detalhes da tarefa"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="status">Status</label>
+            <select id="status">
+              <option value="pending">Pendente</option>
+              <option value="in_progress">Em andamento</option>
+              <option value="done">Concluída</option>
+            </select>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn primary" id="save-btn">Salvar</button>
+            <button type="button" class="btn ghost" id="cancel-edit" style="display:none;">
+              Cancelar edição
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="card list-card">
+        <div class="list-header">
+          <h2>Tarefas</h2>
+          <button class="btn small" id="reload-btn">Recarregar</button>
+        </div>
+
+        <div id="tasks-container" class="tasks-container">
+          <!-- tarefas vão aparecer aqui -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Conectado em <code>http://localhost:3000/tasks</code></span>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
